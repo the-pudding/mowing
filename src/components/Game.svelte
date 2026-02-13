@@ -73,7 +73,8 @@
 	async function submit(alreadyCompleted) {
 		try {
 			const str = path.map((p) => p.join(",")).join("|");
-			window.xxx = JSON.stringify(path);
+			// TODO remove
+			window.russell = JSON.stringify(path);
 			if (str.length < MAX_LENGTH) {
 				storage.value.path = path;
 				game.path = $state.snapshot(path);
